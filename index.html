@@ -4,16 +4,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">   
-    <title>Search</title>
+    <title>Google Search</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <form action="https://www.google.com/search">
-        <input type="text" name="q">
-        <input type="submit" value="Google Search">
-    </form>
-    <a href="image.html">Image Search</a>
-    <a href="advanced_search.html">Advanced Search</a>
+    <header>
+        <nav>
+            <a href="image.html">Image Search</a>
+            <a href="advanced_search.html">Advanced Search</a>
+        </nav>
+    </header>
+    <main>
+        <form action="https://www.google.com/search" method="GET">
+            <input type="text" name="q" placeholder="Search Google..." required>
+            <input type="submit" value="Google Search">
+            <div class="buttons">
+                <button type="submit">Google Search</button>
+                <button type="submit" formaction="https://www.google.com/search?btnI=1">I'm Feeling Lucky</button>
+            </div>
+        </form>
+    </main>
 </body>
 
 </html>
